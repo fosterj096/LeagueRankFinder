@@ -27,6 +27,10 @@ winRate_container = page_soup.findAll("span", {"class":"winratio"})
 winRate = winRate_container[0].text
 print(winRate)
 
+ladder_container = page_soup.findAll("span", {"class":"ranking"})
+ladder = ladder_container[0].text
+print("Your current rank on your country's ladder is", ladder)
+
 champ_container = page_soup.findAll("div", {"class":"ChampionName"})
 champ = champ_container[0].text
 print("Your most played champion in ranked is", champ)
