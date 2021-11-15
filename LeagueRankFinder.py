@@ -3,6 +3,7 @@ import bs4 #importing beautiful soup for parsing through html contents
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 
+
 #User input for summoner name, fixes space issues
 print("What is your summoner name?")
 noModName = input()
